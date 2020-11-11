@@ -1,15 +1,23 @@
 {
-  "name": "foundations",
+  "name": "javascript-foundations",
   "version": "1.0.0",
-  "description": "Practice programs for mastering the basics of JavaScript",
+  "description": "Each exercise emphasizes the fundamentals of object oriented programming in JavaScript.",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
   "scripts": {
     "test": "mocha"
   },
-  "author": "Turing School",
-  "license": "MIT",
-  "dependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^5.2.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felipeache/JS-Basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Felipeache/JS-Basics/issues"
+  },
+  "homepage": "https://github.com/Felipeache/JS-Basics#readme"
 }
