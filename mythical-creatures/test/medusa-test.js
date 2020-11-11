@@ -17,9 +17,13 @@ describe('Medusa', function() {
   it('should have a name', function() {
     // instantiate a Medusa object with your name as an argument
     // instantiate another Medusa object with someone else's name as an argument
-
+    var medusa1 = new Medusa("pepito1");
+    var medusa2 = new Medusa("pepito2");
     // assert that the first medusa's name is your name
     // assert that the second medusa's name is the other name
+    assert.equal(medusa1.name,"pepito1")
+    assert.equal(medusa2.name,"pepito2")
+
   });
 
   it('should start with no statues', function() {
@@ -46,6 +50,9 @@ describe('Medusa', function() {
     var victim = new Person('Robbie');
 
     medusa.stare(victim);
+    console.log("===============================")
+    console.log("DEBE ESTAR ESTONIADA =>", medusa.statues[0])
+    console.log("===============================")
 
     assert.equal(medusa.statues[0].stoned, true);
   });
@@ -121,6 +128,9 @@ describe('Person', function() {
   it('should be stoned after looking into Medusas eyes', function() {
     var medusa = new Medusa('Pam');
     var victim = new Person('Khalid');
+    console.log("============================")
+    console.log("CREANDO VICTIM ANTES DE SER MIRADA", victim)
+    console.log("============================")
 
     assert.equal(victim.stoned, false);
     

@@ -1,5 +1,5 @@
 class Medusa {
-    constructor(name, job) {
+    constructor(name) {
         this._name = name;
         this._statues = [];
         this._cursed = false;
@@ -18,10 +18,6 @@ class Medusa {
         return this._statues;
     }
 
-    // set statues(newStatue) {
-    //     this._statues = newStatue;
-    // }
-
     get cursed(){
         return this._cursed;
     }
@@ -30,16 +26,15 @@ class Medusa {
         return this._booty;
     }
 
-    stare(victime) { 
-    
-        if (this._statues.length >2){
-            first = this._statues[0];
-            this._statues.shift();
-            first.stoned();
+    stare(victim) { 
+        if (this._statues.length === 3){
+            this._statues[0].stoned();
+            this._statues.shift();          
         }
-        this._statues.push(victime);
-        victime.stoned();
+        victim.stoned();
+        this._statues.push(victim);
 
+        return victim
     }
 
 }
