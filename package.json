@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Each exercise emphasizes the fundamentals of object oriented programming in JavaScript.",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
   "devDependencies": {
     "mocha": "^5.2.0"
   },
